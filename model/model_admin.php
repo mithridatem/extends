@@ -2,6 +2,11 @@
     class Admin extends utilisateur{
         //attributs
         protected $activate; 
+        //constructeur Admin
+        public function __construct($name, $first){
+            $this->name = $name;
+            $this->firstName = $first;
+        }
         //getter and setter
         //redéfinition dans la classe
         public function getName():string{
